@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="panapa.js"></script>
+    <link rel="stylesheet" href="tes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Tentang Kami - Panapa</title>
+</head>
+<body>
+    <!-- ini navigasi bar -->
+    <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Panapa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto my-2 my-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#trendiing">Trending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#tokoo">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="organic.html">Organic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="anorganic.html">Anorganic</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn0 " type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- ini akhir navigasi bar -->
+
+<!-- ini hero halaman tentang kami -->
+<section class="text-center py-5" style="background: rgb(172,18,18); color:#fff;">
+  <div class="container py-4">
+    <h1>Tentang Kami</h1>
+    <h6>Kenali kelompok di balik Panapa</h6>
+  </div>
+</section>
+<!-- akhir hero -->
+
+<!-- ini area foto kelompok, GANTI src gambar di bawah dengan foto kelompok kalian -->
+<section class="py-5">
+  <div class="container text-center">
+    <div class="mx-auto" style="max-width:700px;">
+      <img id="teamPhoto" src="/gambarr/foto bersama desa patawang.jpeg" alt="Foto Kelompok Kami" class="img-fluid rounded"
+           style="border:4px solid rgb(172,18,18); width:100%; object-fit:cover;"
+           onerror="this.style.display='none'; document.getElementById('teamPhotoPlaceholder').style.display='flex';">
+
+      <!-- placeholder ini muncul otomatis kalau foto belum ada / src belum diganti -->
+      <div id="teamPhotoPlaceholder" style="display:none; align-items:center; justify-content:center; flex-direction:column;
+           height:320px; background:#f0f0f0; border:4px dashed rgb(172,18,18); border-radius:10px; color:#888;">
+        <i class="fas fa-camera-retro" style="font-size:48px;"></i>
+        <p class="mt-2 mb-0">Foto kelompok belum diisi.<br>Ganti <code>src</code> pada tag &lt;img id="teamPhoto"&gt; di tentang-kami.html.</p>
+      </div>
+    </div>
+
+    <h4 class="mt-4">Kelompok Panapa</h4>
+    <p class="mt-2 mx-auto" style="max-width:600px; color:#555;">
+    
+
+Kelompok Panapa merupakan tim mahasiswa yang terdiri dari Andri Adi Djami, Elvin Pura Kaborang, Gregorius U. J. Padjama, Artica Waluwandja, Edgar Umbu Awad, Diana Yunira Wungo, Jifton A. Mangngi Lodo, dan Ananda Janggadewa. Kami bekerja sama dalam mengembangkan website Hasil Bumi Patawang sebagai media digital untuk memperkenalkan dan memasarkan berbagai hasil pertanian, perkebunan, perikanan, peternakan serta produk unggulan Desa Patawang.
+Melalui website ini, kami ingin membantu masyarakat dan para pelaku usaha lokal dalam mempromosikan hasil bumi yang berkualitas kepada masyarakat yang lebih luas. Selain menjadi sarana pemasaran, website ini juga bertujuan untuk memberikan informasi mengenai potensi hasil bumi desa patawang serta mendukung perkembangan ekonomi masyarakat secara berkelanjutan.
+Dengan semangat kerja sama, kreativitas, dan kepedulian terhadap kemajuan desa, Kelompok Panapa berharap website ini dapat menjadi jembatan antara petani lokal dan konsumen, sehingga hasil bumi Desa Patawang semakin dikenal dan memberikan manfaat bagi banyak orang.
+  </div>
+</section>
+<!-- akhir area foto kelompok -->
+
+<!-- footer simpel -->
+<footer class="news py-4 text-center">
+  <div class="container">
+    <a href="index.html" class="btn1 d-inline-flex align-items-center justify-content-center" style="text-decoration:none;width:auto;padding:0 24px;">⬅ Kembali ke Beranda</a>
+    <p class="mt-3 mb-0">Copyright @2026 | Panapa - Hasil Bumi Patawang</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
